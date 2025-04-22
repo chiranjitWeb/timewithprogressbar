@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Answer Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="timer-container">
+    <svg id="progress-timer" width="100" height="100">
+      <circle cx="50" cy="50" r="45" stroke="#e6e6e6" stroke-width="5" fill="none" />
+      <circle id="timer-circle" cx="50" cy="50" r="45" stroke="#3cba54" stroke-width="5" fill="none" stroke-dasharray="282.6" stroke-dashoffset="0" />
+    </svg>
+    <div id="timer">00:30</div>
+  </div>
+  <div id="progress-container">
+    <div class="progress-step active">Q1</div>
+    <div class="progress-step">Q2</div>
+    <div class="progress-step">Q3</div>
+    <div class="progress-step">Q4</div>
+    <div class="progress-step">Q5</div>
+    <div class="progress-step">Q6</div>
+    <div class="progress-step">Q7</div>
+    <div class="progress-step">Q8</div>
+    <div class="progress-step">Q9</div>
+    <div class="progress-step">Q10</div>
+  </div>
+  <div id="question-container">
+    <div id="question">Question will appear here</div>
+  </div>
+  <div id="answer-container">
+    <textarea id="answer" placeholder="Type your answer here..."></textarea>
+    
+  </div>
+  <div id="navigation-container">
+    <button id="next-button" onclick="nextQuestion()">Next</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
